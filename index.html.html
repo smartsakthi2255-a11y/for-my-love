@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love! ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght=700&family=Poppins:wght=300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary-color: #ff4d6d; --secondary-color: #ffb3c1; --bg-color: #0a0908; --text-color: #f7f7f9; }
+        * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-color); overflow-x: hidden; text-align: center; }
+        .hearts-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
+        .heart { position: absolute; color: var(--primary-color); opacity: 0.6; animation: floatUp 6s linear infinite; }
+        @keyframes floatUp { 0% { transform: translateY(100vh) scale(0); opacity: 0; } 50% { opacity: 0.8; } 100% { transform: translateY(-10vh) scale(1.5); opacity: 0; } }
+        section { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 40px 20px; position: relative; z-index: 1; }
+        h1 { font-family: 'Dancing Script', cursive; font-size: 3.5rem; color: var(--primary-color); margin-bottom: 20px; text-shadow: 2px 2px 10px rgba(255, 77, 109, 0.5); }
+        .music-btn { background-color: var(--primary-color); color: white; border: none; padding: 12px 25px; font-size: 1rem; border-radius: 30px; cursor: pointer; transition: 0.3s; margin-top: 20px; box-shadow: 0 4px 15px rgba(255, 77, 109, 0.4); }
+        .stats-grid { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin-top: 30px; }
+        .stat-card { background: rgba(255, 255, 255, 0.05); padding: 20px 40px; border-radius: 15px; border: 1px solid rgba(255, 77, 109, 0.2); min-width: 200px; }
+        .stat-card h3 { font-size: 2rem; color: var(--primary-color); }
+        .gallery { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-top: 30px; }
+        .polaroid { background: white; padding: 15px 15px 30px 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); transform: rotate(-3deg); transition: 0.3s; width: 280px; }
+        .polaroid:nth-child(even) { transform: rotate(3deg); }
+        .polaroid:hover { transform: rotate(0deg) scale(1.05); z-index: 10; }
+        .polaroid img { width: 100%; height: 250px; object-fit: cover; background: #eee; }
+        .polaroid .caption { font-family: 'Dancing Script', cursive; color: #333; font-size: 1.5rem; margin-top: 15px; text-align: center; }
+        .reasons-list { max-width: 600px; text-align: left; margin-top: 30px; }
+        .reason-item { background: rgba(255, 255, 255, 0.05); margin-bottom: 15px; padding: 15px 20px; border-left: 5px solid var(--primary-color); border-radius: 0 10px 10px 0; font-size: 1.1rem; }
+        .letter-box { background: rgba(255, 255, 255, 0.03); border: 1px dashed var(--secondary-color); padding: 40px; max-width: 700px; border-radius: 20px; line-height: 1.8; font-size: 1.1rem; text-align: justify; }
+        .signature { font-family: 'Dancing Script', cursive; font-size: 2rem; color: var(--primary-color); text-align: right; margin-top: 20px; }
+        footer { padding: 20px; background: #000; font-size: 0.9rem; color: #666; }
+    </style>
+</head>
+<body>
+
+    <audio id="bg-music" loop preload="auto">
+        <source src="bgm3.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="hearts-container" id="hearts"></div>
+
+    <section id="hero">
+        <h1>Happy Birthday, My Gurl! ❤️</h1>
+        <p style="font-size: 1.2rem;">Today is all about celebrating the most beautiful soul who made everything better.</p>
+        <button class="music-btn" onclick="toggleMusic()">🎵 Tap for Music & Scroll Down</button>
+    </section>
+
+    <section id="stats">
+        <h1>Our Journey in Numbers 📊</h1>
+        <div class="stats-grid">
+            <div class="stat-card"><h3>Infinite</h3><p>Love & Laughs</p></div>
+            <div class="stat-card"><h3>999+</h3><p>Cute Little Fights</p></div>
+            <div class="stat-card"><h3>Every</h3><p>Single Second Spent Thinking of You</p></div>
+        </div>
+    </section>
+
+    <section id="photos">
+        <h1>Memory Lane 📸</h1>
+        <div class="gallery">
+            <div class="polaroid"><img src="SJ1.jpeg" alt="1"><div class="caption">That Beautiful Smile! 😍</div></div>
+            <div class="polaroid"><img src="SJ2.jpeg" alt="2"><div class="caption">The Best Day ever! ✨</div></div>
+            <div class="polaroid"><img src="SJ3.jpeg" alt="3"><div class="caption">My Whole World ❤️</div></div>
+            <div class="polaroid"><img src="SJ4.jpeg" alt="4"><div class="caption">Cute moments! 😘</div></div>
+            <div class="polaroid"><img src="SJ5.jpeg" alt="5"><div class="caption">Your eyes tell a story 👀</div></div>
+            <div class="polaroid"><img src="SJ6.jpeg" alt="6"><div class="caption">Happiest with you 🌸</div></div>
+            <div class="polaroid"><img src="SJ7.jpeg" alt="7"><div class="caption">Forever to go! ♾️</div></div>
+            <div class="polaroid"><img src="SJ8.jpeg" alt="8"><div class="caption">My favorite picture 📸</div></div>
+            <div class="polaroid"><img src="SJ9.jpeg" alt="9"><div class="caption">You are pure magic ✨</div></div>
+            <div class="polaroid"><img src="SJ10.jpeg" alt="10"><div class="caption">Happy Birthday My Love!🎂</div></div>
+        </div>
+    </section>
+
+    <section id="reasons">
+        <h1>Reasons Why I Love You ✨</h1>
+        <div class="reasons-list">
+            <div class="reason-item">❤️ Unnoda siripu tha en full day tensionaiyume gaali pannidum.</div>
+            <div class="reason-item">❤️ En mela nee kaatura akkarai... ammakku aprm nee tha enna romba paathukura.</div>
+            <div class="reason-item">❤️ Un kooda pesumpothu matum tha naan naana free-ah iruken.</div>
+            <div class="reason-item">❤️ Unnoda antha innocent and loving character enaku romba romba pudikum.</div>
+            <div class="reason-item">❤️ I always Miss Youuu sooo muchhh and I still Waiting For you.</div>
+        </div>
+    </section>
+
+    <section id="letter">
+        <h1>A Letter For You ✉️</h1>
+        <div class="letter-box">
+            <p>Hey Birthday Girl / My Love,</p><br>
+            <p>Iniku un birthday, aanaa present enaku kedaicha matheri iruku—because having you in my life is the biggest gift ever. This website is just a small effort to show you how much you mean to me.</p><br>
+            <p>Namma life-la evlo ups and downs vandhalum, I'll always be there holding your hand. Intha varsham matum illa, inime vara pora unga ella birthday-laiyume un koodave thaa naan irupen. Stay happy, keep smiling, and never doubt how much I love you!</p>
+            <div class="signature">Always Yours,<br>Sakthi ❤️</div>
+        </div>
+    </section>
+
+    <footer>Made with ❤️ by Sakthi | Happy Birthday!</footer>
+
+    <script>
+        function toggleMusic() {
+            const music = document.getElementById('bg-music');
+            const btn = document.querySelector('.music-btn');
+            if (music.paused) {
+                music.play().then(() => {
+                    btn.innerHTML = "⏸️ Pause Music";
+                }).catch(err => {
+                    alert("Audio file fetch issue or un-supported format. Check naming track!");
+                });
+            } else {
+                music.pause();
+                btn.innerHTML = "🎵 Play Music";
+            }
+        }
+        function createHeart() {
+            const container = document.getElementById('hearts');
+            if(!container) return;
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.innerHTML = '❤️';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.fontSize = Math.random() * 20 + 10 + 'px';
+            heart.style.animationDuration = Math.random() * 3 + 3 + 's';
+            container.appendChild(heart);
+            setTimeout(() => { heart.remove(); }, 6000);
+        }
+        setInterval(createHeart, 300);
+    </script>
+</body>
+</html>
